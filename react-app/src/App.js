@@ -5,6 +5,7 @@ import Home from './features/Home'
 import Footer from './features/Footer'
 import Detail from './features/Detail'
 import Cart from './features/Cart'
+import Payment from './features/Payment'
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,6 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={() => <Home />} />
-          <Route path="/detail" exact component={() => <Detail />} />
           <Route path="/cart" exact component={() => <Cart />} />
         </Switch>
         <Footer />
